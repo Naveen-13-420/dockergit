@@ -22,7 +22,11 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
-    containerRegistry: 'dockerservice'
-    repository: 'udemydockr'
+    containerRegistry: 'udemy service connection'
+    command: 'login'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'udemy service connection'
+    repository: 'naveen1243/udemypractise'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
