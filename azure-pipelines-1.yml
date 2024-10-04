@@ -29,5 +29,5 @@ steps:
     containerRegistry: 'azuredevdockerrgistry'
     repository: 'naveen1243/udemypractise'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: '**/AzureDockerfile'
     tags: 'udemy-$(Build.BuildId)'
